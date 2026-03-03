@@ -1,0 +1,32 @@
+﻿  Building Custom Rule C:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows/CMakeLists.txt
+  main.cpp
+  Camera.cpp
+  Cube.cpp
+  Shader.cpp
+  Tokenizer.cpp
+  Window.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  imgui.cpp
+  imgui_impl_opengl3.cpp
+  Joint.cpp
+  Skeleton.cpp
+  Vertex.cpp
+  Triangle.cpp
+  Skin.cpp
+  imgui_impl_glfw.cpp
+  AnimationClip.cpp
+  Channel.cpp
+  正在生成代码...
+  正在编译...
+  Particle.cpp
+  SpringDamper.cpp
+  Triangle_p4.cpp
+  Cloth.cpp
+  正在生成代码...
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“glew32s.pdb”(使用“glew32s.lib(glew.obj)”或在“C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\build\Debug\glew32s.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  menv.vcxproj -> C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\build\Debug\menv.exe

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\build\CMakeFiles\dd343f3acacb8115ee15d531966c10d4\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C24F10CD-6C16-3C38-B30B-EFA1FC33ECD3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

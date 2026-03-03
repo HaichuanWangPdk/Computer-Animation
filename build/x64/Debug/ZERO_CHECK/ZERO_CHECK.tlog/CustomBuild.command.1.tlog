@@ -1,0 +1,10 @@
+^C:\USERS\PRIDAK\DESKTOP\IN BETWEEN DREAMS\WINTER 26\CSE 169\P1\CSE169_STARTER_WINDOWS\BUILD\CMAKEFILES\DD343F3ACACB8115EE15D531966C10D4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows" "-BC:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows/build/menv.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

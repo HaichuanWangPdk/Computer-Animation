@@ -1,0 +1,10 @@
+^C:\USERS\PRIDAK\DESKTOP\IN BETWEEN DREAMS\WINTER 26\CSE 169\P1\CSE169_STARTER_WINDOWS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows" "-BC:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows/build" --check-stamp-file "C:/Users/Pridak/Desktop/In Between Dreams/Winter 26/CSE 169/p1/cse169_starter_windows/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

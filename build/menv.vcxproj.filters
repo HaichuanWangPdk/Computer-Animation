@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Tokenizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Joint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Skeleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Skin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\AnimationClip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\SpringDamper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Triangle_p4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\src\Cloth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Joint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Skeleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imgui_impl_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\imgui_impl_opengl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\AnimationClip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Particle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\SpringDamper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Triangle_p4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\include\Cloth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Pridak\Desktop\In Between Dreams\Winter 26\CSE 169\p1\cse169_starter_windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B242EF53-84DA-3906-A05E-5ED34DDDAE8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{065422FA-C9CC-3073-859A-24A33818D953}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
