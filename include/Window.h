@@ -8,6 +8,7 @@
 #include "Skin.h"
 #include "AnimationClip.h"
 #include "Cloth.h"
+#include "IKChain.h"  //project 5
 
 class Window {
 public:
@@ -31,6 +32,11 @@ public:
 
     //Project 4
     static Cloth* cloth;
+
+    //Project 5
+    static IKChain* ikChain;
+    static glm::vec3 ikGoal;
+    static bool      ikMode;
 
     // Shader Program
     static GLuint shaderProgram;
