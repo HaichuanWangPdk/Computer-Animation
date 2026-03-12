@@ -29,6 +29,11 @@ bool Window::playAnimation = true;
 //Project 4
 Cloth* Window::cloth = nullptr;
 
+//Project 5
+IKChain* Window::ikChain = nullptr;
+glm::vec3 Window::ikGoal = glm::vec3(0.f);
+bool      Window::ikMode = false;
+
 // Camera Properties
 Camera* Cam;
 
@@ -112,6 +117,11 @@ void Window::cleanUp() {
     if (cloth) {
         delete cloth;
         cloth = nullptr;
+    }
+
+    if (ikChain) { 
+        delete ikChain;   
+        ikChain = nullptr; 
     }
 
     glDeleteProgram(shaderProgram);
@@ -232,6 +242,10 @@ void Window::idleCallback() {
         
     }
 
+    //Project 5
+    if (ikChain)
+        ikChain->Solve(ikGoal);
+
 
 }
 
@@ -248,6 +262,12 @@ void Window::displayCallback(GLFWwindow* window) {
     // Project 4 
     if (cloth) {
         cloth->Draw(Cam->GetViewProjectMtx(), shaderProgram);
+    }
+
+    //Project 5
+    if (ikChain) {
+        ikChain->Draw(Cam->GetViewProjectMtx(), shaderProgram);
+        ikChain->DrawGoal(ikGoal, Cam->GetViewProjectMtx(), shaderProgram);
     }
 
     // ImGui frame setup
@@ -351,6 +371,67 @@ void Window::displayCallback(GLFWwindow* window) {
 
             translateX = translateY = translateZ = 0.0f;
             prevX = prevY = prevZ = 0.0f;
+        }
+
+        ImGui::End();
+    }
+
+    // IK Controls (project 5)
+    if (ikChain) {
+        ImGui::Begin("IK Controls");
+
+        // ---- Goal Position ----
+        // Sliders track a local static float and apply deltas to ikGoal,
+        // mirroring the cloth simulation's pattern exactly.
+        ImGui::SeparatorText("Goal Position");
+
+        const float reach = ikChain->GetChainLength();
+        static float goalX = reach * 0.4f, prevGX = reach * 0.4f;
+        static float goalY = reach * 0.6f, prevGY = reach * 0.6f;
+        static float goalZ = reach * 0.3f, prevGZ = reach * 0.3f;
+
+        if (ImGui::SliderFloat("Goal X", &goalX, -reach, reach)) {
+            ikGoal.x += goalX - prevGX;
+            prevGX = goalX;
+        }
+        if (ImGui::SliderFloat("Goal Y", &goalY, -reach, reach * 1.5f)) {
+            ikGoal.y += goalY - prevGY;
+            prevGY = goalY;
+        }
+        if (ImGui::SliderFloat("Goal Z", &goalZ, -reach, reach)) {
+            ikGoal.z += goalZ - prevGZ;
+            prevGZ = goalZ;
+        }
+
+        // ---- Solver Parameters ----
+        ImGui::SeparatorText("Solver");
+        ImGui::SliderFloat("Step Size", &ikChain->stepSize, 0.001f, 0.5f);
+        ImGui::SliderInt("Max Iter", &ikChain->maxIter, 1, 100);
+        ImGui::SliderFloat("Tolerance", &ikChain->tolerance, 0.0001f, 0.1f, "%.4f");
+        ImGui::Checkbox("Clamp Angles", &ikChain->doClamp);
+        if (ikChain->doClamp)
+            ImGui::SliderFloat("Max Angle", &ikChain->maxAngle, 10.f, 180.f);
+
+        // ---- Status ----
+        ImGui::SeparatorText("Status");
+        const glm::vec3 ee = ikChain->GetEndEffector();
+        const float     dist = glm::length(ikGoal - ee);
+        ImGui::Text("End effector : (%.2f, %.2f, %.2f)", ee.x, ee.y, ee.z);
+        ImGui::Text("Goal         : (%.2f, %.2f, %.2f)", ikGoal.x, ikGoal.y, ikGoal.z);
+        if (dist < ikChain->tolerance)
+            ImGui::TextColored({ 0.2f,1.f,0.2f,1.f }, "Distance: %.4f  [REACHED]", dist);
+
+        // ---- Reset ----
+        ImGui::Separator();
+        if (ImGui::Button("Reset Chain")) {
+            ikChain->Reset();
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Reset Goal")) {
+            ikGoal = glm::vec3(reach * 0.4f, reach * 0.6f, reach * 0.3f);
+            goalX = ikGoal.x; prevGX = goalX;
+            goalY = ikGoal.y; prevGY = goalY;
+            goalZ = ikGoal.z; prevGZ = goalZ;
         }
 
         ImGui::End();
