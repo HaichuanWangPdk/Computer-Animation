@@ -51,6 +51,7 @@ int main(int argc, char** argv) {
     const char* skinFilename = nullptr;
     const char* animFilename = nullptr;  // NEW for Project 3
     bool clothSimMode = false; //Project 4
+    bool ikMode = false; //Project 5
 
     // Parse command line arguments to determine which files to load
     if (argc == 1) {
@@ -67,6 +68,11 @@ int main(int argc, char** argv) {
                 clothSimMode = true;
                 std::cout << "Initializing Cloth Simulation" << std::endl;
                 continue;  // Skip extension check
+            }
+
+            if (fname == "IK") {
+                ikMode = true;
+                continue;
             }
 
             std::string ext = fname.substr(fname.find_last_of('.') + 1);
@@ -145,6 +151,14 @@ int main(int argc, char** argv) {
     if (clothSimMode) {
         Window::cloth = new Cloth();
         std::cout << "Cloth simulation initialized" << std::endl;
+    }
+
+    if (ikMode) {
+        Window::ikChain = new IKChain();
+        const float reach = Window::ikChain->GetChainLength();
+        Window::ikGoal = glm::vec3(reach * 0.4f, reach * 0.6f, reach * 0.3f);
+        Window::ikMode = true;
+        std::cout << "IK demo ready";
     }
 
     // Main render loop
